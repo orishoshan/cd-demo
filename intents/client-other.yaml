@@ -8,3 +8,4 @@ spec:
     name: client-other
   calls:
     - name: othersvc
+    - name: ledger.ledger-prod
