@@ -1,0 +1,19 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ledger-ingress
+  namespace: ledger-prod
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cd-demo.otterize-dev.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: ledger
+                port:
+                  number: 80

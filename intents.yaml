@@ -1,0 +1,10 @@
+apiVersion: k8s.otterize.com/v1alpha3
+kind: ClientIntents
+metadata:
+  name: client
+  namespace: client-prod
+spec:
+  service:
+    name: client
+  calls:
+    - name: ledger.ledger-prod

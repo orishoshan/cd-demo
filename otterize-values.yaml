@@ -1,0 +1,6 @@
+intentsOperator:
+  operator:
+   ingressControllerConfigs:
+    - name: ingress-nginx-controller
+      namespace: ingress-nginx
+      kind: Deployment
