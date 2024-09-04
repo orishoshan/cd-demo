@@ -1,4 +1,3 @@
----
 apiVersion: k8s.otterize.com/v1alpha3
 kind: ClientIntents
 metadata:
