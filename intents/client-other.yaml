@@ -1,11 +1,12 @@
-apiVersion: k8s.otterize.com/v1alpha3
+apiVersion: k8s.otterize.com/v2alpha1
 kind: ClientIntents
 metadata:
   name: client-other
   namespace: client-prod
 spec:
-  service:
+  workload:
     name: client-other
   calls:
-    - name: othersvc
-    - name: ledger.ledger-prod
+    - kubernetes:
+        kind: Deployment
+        name: othersvc
