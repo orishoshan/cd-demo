@@ -10,3 +10,5 @@ spec:
     - kubernetes:
         kind: Deployment
         name: othersvc
+    - kubernetes:
+        name: ledger.ledger-prod
